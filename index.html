@@ -9,10 +9,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>Home</title>
+    <title>Tachyon Technologies</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="images/logo-only.png" />
     <!-- Plugin-CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -34,7 +34,30 @@
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+        xfbml            : true,
+        version          : 'v3.3'
+        });
+    };
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="2368014673429548"
+        logged_in_greeting="Hi! How can we help you?"
+        logged_out_greeting="Hi! How can we help you?">
+    </div>
     <div class="preloader">
         <div class="sk-folding-cube">
             <div class="sk-cube1 sk-cube"></div>
@@ -52,17 +75,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+                </button>   
                 <a href="#" class="navbar-brand logo">
-                    <h2>Tachyon Technologies</h2>
+                    <!-- <img src="images/logo.png" alt=""> -->
+                    <h2><img src="images/logo-only.png" alt="Smiley face" width="60" height="60">  Tachyon Technologies</h2>
                 </a>
             </div>
             <!--Logo/-->
+            
             <nav class="collapse navbar-collapse" id="primary-menu">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#home-page">Home</a></li>
                     <li><a href="#service-page">Service</a></li>
-                    <li><a href="#feature-page">Features</a></li>
+                    <li><a href="#feature-page">Why Us</a></li>
                     <!-- <li><a href="#price-page">Pricing</a></li> -->
                     <!-- <li><a href="#team-page">Team</a></li> -->
                     <li><a href="#faq-page">FAQ</a></li>
@@ -129,7 +154,7 @@
                             <img src="images/portfolio-icon-5.png" alt="">
                         </div>
                         <h4>MOBILE DEVELOPMENT</h4>
-                        <p>Complex to simple level mobile cross platform mobile applications user friendly interfaces</p>
+                        <p>Complex to simple level, cross platform mobile applications with user friendly interfaces</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
@@ -138,7 +163,7 @@
                             <img src="images/service-icon-2.png" alt="">
                         </div>
                         <h4>DESKTOP APPLICATION</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                        <p>Complex to simple level, cross platform desktop applications with user friendly interfaces</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
@@ -147,7 +172,7 @@
                             <img src="images/service-icon-1.png" alt="">
                         </div>
                         <h4>MOBILE AGGREGATOR</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                        <p>We have partnered with Mobile Network Operators as well as a leading international mobile aggregator to provide a better aggregration service.</p>
                     </div>
                 </div>
             </div>
@@ -160,16 +185,16 @@
                             <img src="images/portfolio-icon-6.png" alt="">
                         </div>
                         <h4>WEB DEVELOPMENT</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                        <p>Responsive, Reliable, Secured web solutions  </p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="box">
                         <div class="box-icon">
-                            <img src="images/screen-10.png" alt="">
+                            <img src="images/screen-10-final.png" alt="">
                         </div>
-                        <h4>AWESOEM DESIGN</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                        <h4>MACHINE LEARNING</h4>
+                        <p>We have engineers with proven competency in machine learning area.</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4">
@@ -178,7 +203,7 @@
                             <img src="images/service-icon-3.png" alt="">
                         </div>
                         <h4>DIGITAL MARKETING</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                        <p>Right solutions could help you to take your marketing campaign to the next level </p>
                     </div>
                 </div>
             </div>
@@ -194,7 +219,7 @@
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
                     <div class="page-title">
                         <h2>Why Us!</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
+                        <p>Our team is lead by engineers graduated from University of Moratuwa Engineering Faculty (Department of computer science of Engineering). We belive our analytical thinking could help to build the next out of the box solution for you!</p>
                     </div>
                 </div>
             </div>
@@ -204,8 +229,7 @@
                         <div class="box-icon">
                             <img src="images/portfolio-icon-1.png" alt="">
                         </div>
-                        <h3>Creative Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                        <h3>Innovative Design</h3>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -214,7 +238,7 @@
                             <img src="images/portfolio-icon-4.png" alt="">
                         </div>
                         <h3>Worldclass Service</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                       
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -223,7 +247,7 @@
                             <img src="images/portfolio-icon-6.png" alt="">
                         </div>
                         <h3>Clean Codes</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                       
                     </div>
                 </div>
             </div>
@@ -250,42 +274,42 @@
                             <div class="testimonial-photo">
                                 <img src="images/avatar-small-1.png" alt="">
                             </div>
-                            <h3>AR Rahman</h3>
+                            <h3>Client</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-photo">
                                 <img src="images/avatar-small-2.png" alt="">
                             </div>
-                            <h3>AR Rahman</h3>
+                            <h3>Client</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-photo">
                                 <img src="images/avatar-small-3.png" alt="">
                             </div>
-                            <h3>AR Rahman</h3>
+                            <h3>Client</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-photo">
                                 <img src="images/avatar-small-4.png" alt="">
                             </div>
-                            <h3>AR Rahman</h3>
+                            <h3>Client</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-photo">
                                 <img src="images/avatar-small-5.png" alt="">
                             </div>
-                            <h3>AR Rahman</h3>
+                            <h3>Client</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                         <div class="testimonial">
                             <div class="testimonial-photo">
                                 <img src="images/avatar-small-6.png" alt="">
                             </div>
-                            <h3>AR Rahman</h3>
+                            <h3>Client</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
                         </div>
                     </div>
@@ -446,7 +470,7 @@
                                     <img src="images/mail-arrow.png" alt="">
                                 </div>
                                 <p><strong>E-mail: </strong>
-                                    <a href="mailto:youremail@example.com">info@tachyon.lk</a> <br />
+                                    <a href="mailto:youremail@example.com">info@tachyon.io</a> <br />
                                     <!-- <a href="mailto:youremail@example.com">example@mail.com</a> -->
                                 </p>
                             </div>
@@ -454,7 +478,7 @@
                     </div>
                     <div class="col-xs-12 col-md-8">
                          
-                            <form id="formoid" action="api/contact" method="post">
+                            <form id="formoid" action="https://script.google.com/macros/s/AKfycbwUfiOUXyqubagD8PLklwtTp8U8qYfgh_5kfjp1qbMfuH_qwfz4/exec" method="post">
                                     <div class="form-double">
                                         <input type="text" id="form-name" name="name" placeholder="Your name" class="form-control" required="required">
                                         <input type="email" id="form-email" name="email" class="form-control" placeholder="E-mail address" required="required">
